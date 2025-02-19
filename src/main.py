@@ -2,7 +2,7 @@ import requests
 import json
 from config.settings import token, url
 
-headers = {"Authorization": f"ApiKey z{token}"}
+headers = {"Authorization": f"ApiKey {token}"}
 
 class APIExtractor:
     def __init__(self, url, headers):
