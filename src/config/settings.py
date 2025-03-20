@@ -1,0 +1,2 @@
+token = "Z0EjZPzTOb9-qbVJTaLC_8MBDwlIfyVkPb1Jkg4gO0c5uT1yGYKdbhymdooxURAnynsbTrCaUm2kwDer_ognz4-fzjXjZpgL91gl4_Hpqqeo_erG4K7M9uXrh2Pn7T4LAp3szAxHWrCxbXqRAWFz3g.."
+url = "https://apinewintegracao.bomcontrole.com.br/integracao/Cliente/Pesquisar"
