@@ -1,10 +1,15 @@
-from config.settings import *
+from config.settings import token, urlClientes
 from factory.extractor import APIExtractor
-from factory.transform import *
+from factory.transform import Transformer
 
 headers = {"Authorization": f"ApiKey {token}"}
 
-df = APIExtractor(urlClientes, headers).get_data()
-clientes = Trasformer.df_reader(df, schemaCliente)
+# Get clients data
+clientes = APIExtractor(urlClientes,headers)
+df_clientes = clientes.get_data()
 
-print(clientes)
+
+if __name__ == "__main__":
+    # main()
+    print(df_clientes)
+    pass
