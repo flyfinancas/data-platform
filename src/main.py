@@ -1,7 +1,10 @@
-from config.settings import token, url
-from extract.extractor import APIExtractor
+from config.settings import *
+from factory.extractor import APIExtractor
+from factory.transform import *
 
 headers = {"Authorization": f"ApiKey {token}"}
 
-extractor = APIExtractor(url, headers)
-print(extractor.get_data())
+df = APIExtractor(urlClientes, headers).get_data()
+clientes = Trasformer.df_reader(df, schemaCliente)
+
+print(clientes)
