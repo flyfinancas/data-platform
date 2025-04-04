@@ -27,5 +27,13 @@ def get_financial_url():
     
     return f"{ENDPOINTS['financial']}?dataInicio={ano}-{mesPassado:02d}-01 00:00:00&dataTermino={ano}-{mesAtual:02d}-{dia:02d} 00:00:00&tipoData=DataConciliacao"
 
+# Email Configuration
+EMAIL_CONFIG = {
+    "smtp_server": "smtp.hostinger.com",  # Change this according to your email provider
+    "smtp_port": 465,
+    "sender_email": "dataplatform@flyfinancas.com.br",  # Replace with your email
+    "password": "Caradotisim@123"  # Replace with your email password or app-specific password
+}
+
 if __name__ == "__main__":
     print(f"{mesAtual:02d}")
